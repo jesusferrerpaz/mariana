@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+
+	background-image:url(base.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 3000px;
+
+}
+.menu{
+	width: 100%;
+	margin: auto;
+	z-index: 100;
+	position: fixed;
+}
+div nav{
+	background: #000;
+	box-sizing: content-box;
+	text-align: center;
+	
+	
+	
+}
+div nav ul{
+	list-style: none;
+	overflow: hidden;
+}
+div nav ul li{
+	
+	float: left;
+	margin-left: 20px;
+	
+}
+div nav ul li:hover{
+	background: #c9c9c9;
+}
+
+div nav ul li a{
+	display: block;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Tw Cen Mt';
+	font-weight: bolder;
+	color: #FFF;
+	padding: 15px;
+	margin-right: 30px;
+	margin-left: 30px;
+	text-decoration: none;
+	
+	
+}
+
+
+@media  screen and (min-width: 1235px) {
+	body{
+		height: 4000px;
+	}
+	div nav ul li a{
+		font-size: 25px;
+		margin-left: 50px;
+		margin-right: 50px;
+		
+	}
+
+	
+}
+
+.contact{
+	width: 30%;
+	margin:auto;
+	position: relative;
+	font-family: 'Tw Cen Mt';
+	background: #FFF;
+}
+.contact form{
+	width: 90%;
+	margin: auto;
+}
+.contact form input{
+	margin: 0px;
+	padding: 0px;
+}
+.nombre, .apellido{
+	width: 40%;
+}
+.nombre{
+	display: inline-block;
+	margin-right: 10px;
+}
+.long, button{
+	width: 100%;
+}
+ button{
+ 	background: #FF0055;
+ 	cursor: pointer;
+ }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Mariana</title>
+	<link rel="stylesheet" href="CSS/intlTelInput.css">
+	<link rel="stylesheet" type="text/css" href="iconos/fonts.css">
+	<link rel="stylesheet" type="text/css" href="CSS/inicio.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="menu_bar">
+			<a href="#" class="boton_menu"><span class="icon-menu"></span>Menu</a>
+		</div>
+		<div class="menu">		
+			<nav>
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="logos.html">LOGOS</a></li>
+					<li><a href="manual.html">MANUALES</a></li>
+					<li><a href="ilustraciones.html">ILUSTRACIONES</a></li>
+					<li><a class="last_item" href="webshow.html">WEB SHOW</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="main">
+		<div class="wrapper">
+			<div class="parte1">
+				<img src="img/parte1.jpg">
+			</div>
+			<div class="parte2">
+				<img src="img/parte2.jpg">
+			</div>
+			<div class="parte3">
+				<img src="img/parte3.jpg">
+				<div class="logos">
+					<div class="logo"><a href="logos.html"><img src="img/logotipo.jpg" alt="logo"></a></div>
+					<div class="logo"><a href="imagotipo.html"><img src="img/imagotipo.png" alt="logo"></a></div>
+					<div class="logo"><a href="isologos.html"><img src="img/isologo.png" alt="logo"></a></div>
+					<div class="logo"><a href="logos.html"><img src="img/isotipo.png" alt="logo"></a></div>
+					<div class="logo"><a href="ilustraciones.html"><img src="img/ilustraciones.png" alt="logo"></a></div>
+				</div>
+			</div>
+				
+			<div class="parte4">
+				<div class="webshow">
+					<div class="webshow1">
+						<a href="webshow2.html"><img src="img/logomariana.png"></a>
+					</div>
+					<div class="webshow2">
+						<a href="webshow.html"><img src="img/logoalamitad.png"></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="parte5">
+				<div class="parte5_logos">
+					<div class="parte5_logo"><a href="diseñoweb.html"><img src="img/paginaweb.png" alt=""></a></div>
+					<div class="parte5_logo"><a href="manual.html"><img src="img/manualcorporativo.png" alt=""></a></div>
+				</div>
+			</div>
+			<!--<div class="prueba">
+			<img src="img/ilustraciones.png" alt="">
+
+			</div>-->
+		</div>
+		<div class="contact">
+			<h3>CONTÁCTANOS</h3>
+			<form>
+				<input class="nombre" type="text" name="" placeholder="Nombre *">
+				<input class="apellido" type="text" name="" placeholder="Apellido *">
+				<input class="long" type="email" name="" placeholder="Email *">
+				<input class="tel" type="tel" name="phone" id="phone">
+				<input class="long" type="text" name="" placeholder="Empresa">
+				<h4>¿CÓMO PODEMOS AYUDAR?</h4>
+				<textarea class="long" placeholder="Mensaje... *"></textarea><br>
+				<div class="checkbox">
+					<input class="casilla" type="checkbox"> Si, Deseo recibir notificaciones
+				</div>
+				<button type="button">ENVIAR</button>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<section class="footer-wrapepr">
+			<div class="servicios">
+				<h4>Servicios</h4>		
+					<p>Diseño web</p>
+					<p>Diseño gráfico</p>
+			</div>	
+			<div class="contacto">
+				<h4>Redes Sociales</h4>
+				<ul>
+					<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+					<li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+					<li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+					<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="telefono"><h4>Teléfono</h4>
+				<p>+58 424123456</p>
+			</div>	
+		</section>
+		<div class="footer-p">
+			<p>© 2020-Mariana Arandia</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script>
+		var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/utils.js",
+    });
+	</script>
+</body>
+</html>
